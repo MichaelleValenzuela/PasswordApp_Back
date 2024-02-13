@@ -26,7 +26,7 @@ export const registerUser = async (req: any, res: any) => {
 
     if (!(d3 <= date_MAX_limit)) arr_err.push(`El año ingresado es muy elevado, intenta con uno igual o inferior al año ${date_MAX_limit}`)
     else if (!(d3 >= date_MIN_limit)) arr_err.push(`El año ingresado es muy bajo, intenta con uno igual o mayor al año ${date_MIN_limit}`)
-    else if (Math.abs(operation_year) <= 15) arr_err.push("Eres menor de edad, no podés registrarte")
+    else if (Math.abs(operation_year) <= 15) arr_err.push("Eres menor de edad, no puedes registrarte")
 
     if (password !== confirm_password) arr_err.push("Las contraseñas ingresadas deben ser iguales")
     if (!REGEX_PASS.test(password)) arr_err.push("La contraseña debe tener entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula, una mayúscula y un símbolo")

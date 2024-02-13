@@ -36,6 +36,6 @@ app.use((req, res, next) => {
 //configDB();
 
 app.listen(port, async () => {
-    console.log(`Running server on [${varsConfig.PORT_EXPRESS}]`);
+    console.log(`Running server on [${varsConfig.PORT_EXPRESS}]` || process.env.PORT);//Si da fallo quitar el || process.env
     configDB();
 });
