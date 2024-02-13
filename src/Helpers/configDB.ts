@@ -51,12 +51,12 @@ export const configDB = async () => {
                                 type_input: "text",
                             },
                             {
-                                label_input: "Nombre de la tarjeta",
+                                label_input: "Propietario",
                                 name_input: "nombre_tarjeta",
                                 type_input: "text",
                             },
                             {
-                                label_input: "Nro de la tarjeta",
+                                label_input: "Numero de la tarjeta",
                                 name_input: "nrodetarjeta",
                                 type_input: "password"
                             },
