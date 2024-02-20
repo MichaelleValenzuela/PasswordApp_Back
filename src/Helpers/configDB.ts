@@ -94,9 +94,9 @@ export const configDB = async () => {
                         ]
                     }
                 ]).then(function () {
-                    console.log("Data inserted")  // Success 
+                    console.log("Data inserted") 
                 }).catch(function (error) {
-                    console.log(error) // Failure 
+                    console.log(error)
                 });
             }
         });
